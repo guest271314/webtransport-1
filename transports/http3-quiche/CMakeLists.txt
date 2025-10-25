@@ -63,9 +63,9 @@ endif(COMMAND cmake_policy)
 
 
 #protobuf_generate_cpp(PROTO_SRCS PROTO_HDRS 
-#third_party/quiche/quiche/quic/core/proto/cached_network_parameters.proto
-#third_party/quiche/quiche/quic/core/proto/crypto_server_config.proto
-#third_party/quiche/quiche/quic/core/proto/source_address_token.proto)
+#third_party/quiche/quiche//proto/cached_network_parameters.proto
+#third_party/quiche/quiche//proto/crypto_server_config.proto
+#third_party/quiche/quiche//proto/source_address_token.proto)
 
 
 
@@ -91,12 +91,12 @@ platform/quiche_platform_impl/quiche_server_stats_impl.h
 platform/quiche_platform_impl/quiche_flag_utils_impl.h
 #protofiles
 #${PROTO_SRCS}
-#${CMAKE_CURRENT_BINARY_DIR}/third_party/quiche/quiche/quic/core/proto/cached_network_parameters.pb.h
-#${CMAKE_CURRENT_BINARY_DIR}/third_party/quiche/quiche/quic/core/proto/crypto_server_config.pb.h
-#${CMAKE_CURRENT_BINARY_DIR}/third_party/quiche/quiche/quic/core/proto/source_address_token.pb.h
-#${CMAKE_CURRENT_BINARY_DIR}/third_party/quiche/quiche/quic/core/proto/cached_network_parameters.pb.cc
-#${CMAKE_CURRENT_BINARY_DIR}/third_party/quiche/quiche/quic/core/proto/crypto_server_config.pb.cc
-#${CMAKE_CURRENT_BINARY_DIR}/third_party/quiche/quiche/quic/core/proto/source_address_token.pb.cc
+#${CMAKE_CURRENT_BINARY_DIR}/third_party/quiche/quiche//proto/cached_network_parameters.pb.h
+#${CMAKE_CURRENT_BINARY_DIR}/third_party/quiche/quiche//proto/crypto_server_config.pb.h
+#${CMAKE_CURRENT_BINARY_DIR}/third_party/quiche/quiche//proto/source_address_token.pb.h
+#${CMAKE_CURRENT_BINARY_DIR}/third_party/quiche/quiche//proto/cached_network_parameters.pb.cc
+#${CMAKE_CURRENT_BINARY_DIR}/third_party/quiche/quiche//proto/crypto_server_config.pb.cc
+#${CMAKE_CURRENT_BINARY_DIR}/third_party/quiche/quiche//proto/source_address_token.pb.cc
 # url file
 third_party/googleurl/base/debug/crash_logging.cc
 third_party/googleurl/base/debug/crash_logging.h
@@ -349,6 +349,8 @@ third_party/quiche/quiche/http2/hpack/varint/hpack_varint_encoder.h
 #third_party/quiche/quiche/quic/bindings/quic_libevent.cc
 third_party/quiche/quiche/quic/core/chlo_extractor.cc
 third_party/quiche/quiche/quic/core/chlo_extractor.h
+third_party/quiche/quiche/quic/core/quic_force_blockable_packet_writer.cc
+third_party/quiche/quiche/quic/core/quic_force_blockable_packet_writer.h
 third_party/quiche/quiche/quic/core/quic_ping_manager.cc
 third_party/quiche/quiche/quic/core/quic_ping_manager.h
 third_party/quiche/quiche/quic/core/congestion_control/bandwidth_sampler.cc
@@ -545,6 +547,8 @@ third_party/quiche/quiche/quic/core/http/http_decoder.h
 third_party/quiche/quiche/quic/core/http/http_encoder.cc
 third_party/quiche/quiche/quic/core/http/http_encoder.h
 third_party/quiche/quiche/quic/core/http/http_frames.h
+third_party/quiche/quiche/quic/core/http/quic_connection_migration_manager.cc
+third_party/quiche/quiche/quic/core/http/quic_connection_migration_manager.h
 third_party/quiche/quiche/quic/core/http/quic_header_list.cc
 third_party/quiche/quiche/quic/core/http/quic_header_list.h
 third_party/quiche/quiche/quic/core/http/quic_headers_stream.cc
@@ -559,6 +563,8 @@ third_party/quiche/quiche/quic/core/http/quic_server_session_base.cc
 third_party/quiche/quiche/quic/core/http/quic_server_session_base.h
 third_party/quiche/quiche/quic/core/http/quic_spdy_client_session.cc
 third_party/quiche/quiche/quic/core/http/quic_spdy_client_session.h
+third_party/quiche/quiche/quic/core/http/quic_spdy_client_session_with_migration.cc
+third_party/quiche/quiche/quic/core/http/quic_spdy_client_session_with_migration.h
 third_party/quiche/quiche/quic/core/http/quic_spdy_client_session_base.cc
 third_party/quiche/quiche/quic/core/http/quic_spdy_client_session_base.h
 third_party/quiche/quiche/quic/core/http/quic_spdy_client_stream.cc
@@ -722,6 +728,8 @@ third_party/quiche/quiche/quic/core/quic_packet_number.h
 third_party/quiche/quiche/quic/core/quic_packet_reader.cc
 third_party/quiche/quiche/quic/core/quic_packet_reader.h
 third_party/quiche/quiche/quic/core/quic_packet_writer.h
+third_party/quiche/quiche/quic/core/quic_packet_writer_wrapper.cc
+third_party/quiche/quiche/quic/core/quic_packet_writer_wrapper.h
 third_party/quiche/quiche/quic/core/quic_packets.cc
 third_party/quiche/quiche/quic/core/quic_packets.h
 third_party/quiche/quiche/quic/core/quic_path_validator.cc
